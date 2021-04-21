@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block title %}{% endblock %}
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <!-- Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
+.background{
+  background-image: url("{% static "images/d55b843fdca41e8cfaebfda8421cc6fc.jpg" %}");
+  background-color: hsl(0, 0%, 80%);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment:fixed;
+}
+.navbar {
+    border: 0;
+    z-index: 9999;
+    letter-spacing: 0px;
+}
+.logo {
+    /* display: block; */
+    height: auto;
+    width: 52px;
+    padding-top: 5px;
+    margin-right: 15px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+} 
+.navbar .nav > li > a {
+  line-height: 50px;
+ } 
+
+.navbar-header h1 {
+    letter-spacing: 1px;
+    color: black !important;
+    font-family: 'Lobster Two', cursive;
+}
+
+.navbar li a, .navbar {
+    color: black !important;
+    font-size: 18px;
+    transition: all 0.6s 0s;
+}
+
+.navbar-toggle {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: red !important;
+}
+.img{
+    width: 100px;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(133, 243, 8);
+}
+.footter{
+  margin-top: 419px;
+} 
+h1{
+  color: rgb(133, 243, 8);
+}
+</style>
+<body>
+
+
+
+   
+
+    <nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>   
+		<h1 class="brand brand-name navbar-left"><div class"navbar-left">Raha Al Madina TRADING</h1>
+        </div>
+  
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        
+        </nav>
+  <!-- Container wrapper -->
+</nav>
+  
+
+<div class="background">
+  <div class="hero-text">
+
+    <!-- <h1 style="font-size:50px">I am Jane Doe</h1>
+    <h3>And I'm a Photographer</h3> -->
+  
+  </div>
+ </div>
+
+
+
+
+
+ 
+<div
+  id="carouselMultiItemExample"
+  class="carousel slide carousel-dark text-center"
+  data-mdb-ride="carousel"
+>
+
+  <!-- Controls -->
+  <div class="d-flex justify-content-center mb-4">
+   
+    
+  </div>
+  <h2>Our service</h2>
+  <p>Carpat , Cartain , Wallpaper , Artifical Grass , Interiror Decuration , Flooring , Gypsum , Tops , Sofa</p>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="{% static "images/toys.jpg" %}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Toys</h5>
+               
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                 src="{% static "images/Inter.jpg" %}"
+                class="card-img-top"
+                alt="..." width="300px" height="200"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cartain</h5>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                 src="{% static "images/flooring.jpg" %}"
+                class="card-img-top"
+                alt="..." height="200px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Flooring</h5>
+                
+               
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+   
+    
+  </div>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                 src="{% static "images/pexels-pixabay-276566.jpg" %}"
+                class="card-img-top"
+                alt="..." height="230px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sofa</h5>
+                
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                  src="{% static "images/Gypsum.jpg" %}"
+                class="card-img-top"
+                alt="..." height="230px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gypsum</h5>
+               
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="{% static "images/grass.jpg" %}"
+                class="card-img-top"
+                alt="..." height="230px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Artifical Grass</h5>
+                
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a href='https://fr.freepik.com/vecteurs/design'>Design vecteur créé par freepik - fr.freepik.com</a>
+
+
+    <section class="footter">
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Raha Al Madina TRADING - F.Z.E</h5>
+
+        <p>
+          Shop Mobile <br>
+          <i class="fas fa-phone"> 050 88 919 06 </i><i class="fab fa-whatsapp"></i> <br>
+          Shop #DB 010, 011 <br>
+          Ajman China Mail, U,A,E <br>
+          E-mail : salehreza_89@yahoo.com
+        </p>
+      </div>
+  
+     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Mohd Saleh</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+           <i class="fas fa-phone">050 394 21 39</i><br><i class="fas fa-phone">055 491 04 04</i>
+          </li>
+          
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/about" class="text-dark">About Us</a>
+          </li>
+          <li>
+            <a href="/contact" class="text-dark">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-dark" href="#">RahaAlMadinaTRADING.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
